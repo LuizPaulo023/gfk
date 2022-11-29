@@ -56,7 +56,7 @@ importIPCA <- function(){
       items = gsub('^[[:digit:]]+', "", geral_grupo_subgrupo_item_e_subitem),
       items = stringr::str_sub(items, start = 2),
       date = zoo::as.yearmon(mes),
-      date = as.Date(date, format = "Y%/%m/%d"),
+      date = zoo::as.Date(date, format = "Y%/%m/%d"),
       product_groups = dplyr::case_when(
         items == "Refrigerador" ~ "Linha Branca",
         items == "Máquina de lavar roupa" ~ "Linha Branca",

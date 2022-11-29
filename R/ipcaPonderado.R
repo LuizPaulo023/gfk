@@ -59,7 +59,10 @@ ipcaPonderado <- function(){
     dplyr::filter(date == "2016-12-01") %>%
     dplyr::rename(base = ipca_index) %>%
     dplyr::select(-date) %>%
-   tidyr::full_join(select(ipca_group, product_groups, ipca_index, date), by = "product_groups") %>%
+    dplyr::full_join(select(ipca_group,
+                           product_groups,
+                           ipca_index, date),
+                            by = "product_groups") %>%
     dplyr::relocate(date, .after = NULL)
 
 

@@ -34,7 +34,7 @@ importClean <- function(path_raw){
 
   db <- path_raw %>%
     readxl::excel_sheets() %>%
-    magrittr::set_names() %>%
+    set_names() %>%
     purrr::map(read_excel, path = path_raw)
 
   # Juntando a base com a identificação das UFs

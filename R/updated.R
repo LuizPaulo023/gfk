@@ -70,7 +70,7 @@ updated <- function(){
    dplyr::bind_rows(db_gfk[[1]]) %>%
     dplyr::distinct(date, product_groups,
                     region, .keep_all = T) %>%
-   dplyr::arrange(-dplyr::desc(date))
+   dplyr::arrange(-desc(date))
 
   # GFK nivel agregado BR
 

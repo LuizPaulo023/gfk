@@ -1,4 +1,4 @@
-Package: gfk
+Package: gfk4i
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
@@ -11,8 +11,8 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.1
 Imports:
-	tidyverse,  
- 	lubridate,
+	      tidyverse,  
+ 	      lubridate,
         readxl, 
         zoo, 
         sidrar, 
